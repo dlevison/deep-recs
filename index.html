@@ -30,7 +30,7 @@
 			</ul>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=dlevison@gmail.com?su=Add%20Deep%20Recommendation" class="btn btn-outline-primary">Add Recommendation</a>
+					<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=dlevison@gmail.com&su=Add%20Deep%20Recommendation" class="btn btn-outline-primary" target="_blank">Add Recommendation</a>
 				</li>
 			</ul>
 		</div>
@@ -57,7 +57,7 @@
 			</div>
 		{{/each}}
 		{{#unless this.products}}
-			<p class="p-5 text-center text-muted">No products found</p>
+			<p class="p-5 text-center text-muted">No Recommendations found</p>
 		{{/unless}}
 	</div>
 </script>
@@ -65,14 +65,14 @@
 <body class="bg-light">
 	<div id="menu-container"></div>
 	<div class="container" id="products-container">
-		<!-- Loading indicator: this gets replaced when we have products -->
+		<!-- Loading indicator: this gets replaced when we have recommendations -->
 		<div class="text-center p-5 m-5">
-			<div class="text-muted p-2">Loading products...</div>
+			<div class="text-muted p-2">Loading Recommendations...</div>
 			<div class="spinner-border text-primary" role="status"></div>
 		</div>
 	</div>
-	<div class="container" id="footer">
+	<!-- div class="container" id="footer">
 		<div class="text-muted text-center p-3">Powered by <a href="https://sheety.co">Sheety</a></div>
-	</div>
+	</div-->
 </body>
 </html>
