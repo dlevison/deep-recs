@@ -19,6 +19,7 @@ function loadProducts() {
 		this.products = json.products.sort((a, b) => {
 			return a.votes < b.votes;
 		})
+		this.products = this.products.reverse();
 		showAllProducts();
 	});
 }
@@ -33,7 +34,6 @@ function loadCategories() {
 }
 
 function drawProducts(products) {
-	products = products.reverse();
 	var template = Handlebars.compile(document.getElementById("products-template").innerHTML);
 	document.getElementById('products-container').innerHTML = template({
 		title: this.title,
